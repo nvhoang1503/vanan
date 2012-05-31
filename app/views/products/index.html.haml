@@ -1,0 +1,35 @@
+= title "Product"
+- content_for :left_side do
+  = render 'shared/left_side'
+%p.title
+  = t('product_list')
+%table.contact_list.standard
+  %tr
+    %th.num
+    %th.name.center
+      =t('product_name')
+    %th.status.center
+      =t('contact_status')
+    %th.action
+  - index = 0  
+  - @products.each do |product|
+    %tr{:class => cycle("even" , "odd")}
+      - index = index + 1
+      %td.center
+        = index
+      %td= product.name
+      %td.center
+        = product.status
+      %td
+        = link_to t('show'), product
+        ="|"
+        = link_to t('edit'), edit_product_path(product)
+        ="|"
+        = link_to t('delete'), product, :confirm => 'Are you sure?', :method => :delete
+
+
+= paginate @products
+
+%br
+
+= link_to 'New Product', new_product_path

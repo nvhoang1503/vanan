@@ -1,0 +1,47 @@
+= render 'slideshow'
+/ %p#news_title
+/   ="Thong tin"
+/ #news_content.news_content
+/   %ul#index_sub_news
+/     %li
+/       &rsaquo;&rsaquo;
+/       = link_to "  adsfaf asf asfasfaf " , "#"
+/     %li.top_line
+/       &rsaquo;&rsaquo;
+/       = link_to " adsfaf asf asfasfaf " , "#"
+/     %li.top_line
+/       &rsaquo;&rsaquo;
+/       = link_to " adsfaf asf asfasfaf " , "#"
+/     %li.top_line
+/       &rsaquo;&rsaquo;
+/       = link_to " adsfaf asf asfasfaf " , "#"
+/     %li.top_line
+/       &rsaquo;&rsaquo;
+/       = link_to " adsfaf asf asfasfaf " , "#"
+/   #news_summary
+/     %p.index_news_name
+/       = "Statistically speaking"
+/     %p.news_detail
+/       = "Statistically speaking, it's likely that at some point in your life, someone has ladled a scoop of creamy rice pudding into a bowl for you. It may have been your grandmother or mother, perhaps the sweet old lady at the deli or cafeteria down the street, or maybe you just plucked a container of Kozy Shack ofnf the shelf at the grocery store and did the scooping yourself."
+/     %p.news_link
+/       = link_to "Chi tiet" , "#"
+
+#news_content.news_content
+  %p.home-title
+    = t('home_title')
+%p#news_title
+  ="San pham dang ban"
+.sub_products
+  -index = 0
+  - @products.each do |product|
+    - if index == 0 
+      .sub_produc_img
+        = image_tag('Demo/img_demo.JPG')
+        %p
+          = link_to product.name , "#"
+    - else
+      .sub_produc_img.left_hline
+        = image_tag('Demo/img_demo.JPG')
+        %p
+          = link_to "abc" , "#"
+

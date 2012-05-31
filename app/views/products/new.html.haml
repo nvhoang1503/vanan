@@ -1,0 +1,8 @@
+= title "Contact"
+- content_for :left_side do
+  = render 'shared/left_side'
+
+%p.title
+  = t('product_add')
+= render 'form'
+= link_to t('product_list'), products_path

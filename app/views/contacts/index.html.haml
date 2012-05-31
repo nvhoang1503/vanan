@@ -1,0 +1,35 @@
+= title "Contact"
+- content_for :left_side do
+  = render 'shared/left_side'
+%p.title
+  = t('contact_list')
+%table.contact_list.standard
+  %tr
+    %th.num
+    %th.name.center
+      =t('contact_name')
+    %th.title.center
+      =t('contact_title')
+    %th.status.center
+      =t('contact_status')
+    %th.action
+  - index = 0  
+  - @contacts.each do |contact|
+    %tr{:class => cycle("even" , "odd")}
+      - index = index + 1
+      %td.center
+        = index
+      %td= contact.name
+      %td= contact.title
+      %td.center
+        - if contact.status == 1
+          = t('contact_new')
+        - else
+          = t('contact_old')
+      %td
+        = link_to t('contact_show'), contact
+        ="|"
+        = link_to t('contact_delete'), contact, :confirm => 'Are you sure?', :method => :delete
+
+
+= paginate @contacts

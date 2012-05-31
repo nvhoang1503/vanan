@@ -1,0 +1,13 @@
+#createprofile.tab{:style => "display: block;", :class => params[:controller]}
+  = simple_form_for @introduce do |f|
+    = f.error_notification
+    = f.label t('intro_title')
+    = f.input :title , :label => false, :wrapper_html => {:class => "input_field"}
+    = f.label t('intro_summary')
+    = f.input :summary ,:label => false, :wrapper_html => {:class => "input_field"}
+    = f.label t('intro_content')
+    = f.input :content ,:label => false, :wrapper_html => {:class => "input_field"}
+    = f.label t('intro_img')
+    = f.input :image ,:label => false, :wrapper_html => {:class => "input_field"}
+    .actions
+      = f.button :submit  , :class => "btn" , :value => t('save')

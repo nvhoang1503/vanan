@@ -1,0 +1,13 @@
+= title "Introduce"
+- content_for :left_side do
+  = render 'shared/left_side'
+= title "Introduce"
+- content_for :left_side do
+  = render 'shared/left_side'
+%p.title
+  = t('intro_input_info')
+= render 'form'
+
+= link_to 'Show', @introduce
+\|
+= link_to 'Back', introduces_path

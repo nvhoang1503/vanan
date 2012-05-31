@@ -1,0 +1,28 @@
+= title "Contact"
+- content_for :left_side do
+  = render 'shared/left_side'
+
+%p#notice= notice
+
+%p
+  %b Name:
+  = @contact.name
+%p
+  %b Address:
+  = @contact.address
+%p
+  %b Phone:
+  = @contact.phone
+%p
+  %b Email:
+  = @contact.email
+%p
+  %b Title:
+  = @contact.title
+%p
+  %b Description:
+  = @contact.description
+
+= link_to 'Edit', edit_contact_path(@contact)
+\|
+= link_to 'Back', contacts_path

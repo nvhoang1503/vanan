@@ -1,0 +1,21 @@
+= title "Introduce"
+- content_for :left_side do
+  = render 'shared/left_side'
+%p.title
+  = t('intro_intro')
+.introduce_content
+  = image_tag('Demo/demo01.jpeg')
+  .info_content
+    %p
+      = @introduce.title
+    %p
+      = @introduce.summary
+    %p
+      = @introduce.content
+
+      
+
+= link_to 'Edit', edit_introduce_path(@introduce)
+\|
+= link_to 'Back', introduces_path
+

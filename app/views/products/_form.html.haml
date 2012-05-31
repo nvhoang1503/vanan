@@ -1,0 +1,15 @@
+#createprofile.tab{:style => "display: block;", :class => params[:controller]}
+  = simple_form_for @product do |f|
+    = f.error_notification
+    = f.label t('product_name')
+    = f.input :name , :label => false, :wrapper_html => {:class => "input_field"}
+    = f.label t('product_price')
+    = f.input :price ,:label => false, :wrapper_html => {:class => "input_field"}
+    = f.label t('product_summary')
+    = f.input :summary ,:label => false, :wrapper_html => {:class => "input_field"}
+    = f.label t('product_desc')
+    = f.input :description ,:label => false, :wrapper_html => {:class => "input_field"}
+   
+    .actions
+      = f.button :submit  , :class => "btn" , :value => t('save')
+

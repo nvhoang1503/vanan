@@ -1,0 +1,31 @@
+= title "Introduce"
+- content_for :left_side do
+  = render 'shared/left_side'
+%p.title
+  = t('contact_list')
+
+%table
+  %tr
+    %th Title
+    %th Summary
+    %th Content
+    %th Image
+    %th Author
+    %th
+    %th
+    %th
+
+  - @introduces.each do |introduce|
+    %tr
+      %td= introduce.title
+      %td= introduce.summary
+      %td= introduce.content
+      %td= introduce.image
+      %td= introduce.author
+      %td= link_to 'Show', introduce
+      %td= link_to 'Edit', edit_introduce_path(introduce)
+      %td= link_to 'Destroy', introduce, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Introduce', new_introduce_path

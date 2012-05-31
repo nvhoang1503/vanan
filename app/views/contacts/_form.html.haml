@@ -1,0 +1,18 @@
+#createprofile.tab{:style => "display: block;", :class => params[:controller]}
+  = simple_form_for @contact do |f|
+    = f.error_notification
+    = f.label t('contact_name')
+    = f.input :name , :label => false, :wrapper_html => {:class => "input_field"}
+    = f.label t('contact_address')
+    = f.input :address ,:label => false, :wrapper_html => {:class => "input_field"}
+    = f.label t('contact_phone')
+    = f.input :phone ,:label => false, :wrapper_html => {:class => "input_field"}
+    = f.label t('contact_email')
+    = f.input :email ,:label => false, :wrapper_html => {:class => "input_field"}
+    = f.label t('contact_title')
+    = f.input :title ,:label => false, :wrapper_html => {:class => "input_field"}
+    = f.label t('contact_info')
+    = f.input :description ,:label => false, :wrapper_html => {:class => "input_field"}
+    .actions
+      = f.button :submit  , :class => "btn" , :value => t('contact_save')
+

@@ -1,0 +1,71 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+vi:
+  hello: "Xin chao"
+  introduc: "Giới thiệu "
+  info: "Thông tin"
+  product: "Sản phẩm"
+  contact: "Liên hệ"
+# ================= COMMON ====================
+  show: "xem"
+  add: "thêm"
+  edit: "sửa"
+  delete: "xóa"
+  save: "lưu"
+  name: "tên"
+  title: "tiêu đề"
+  phone: "điện thoại"
+  address: "địa chỉ"
+  detail: "chi tiết"
+  list: "danh sách"
+  link: "liên kết"  
+
+# =================HOME PAGE====================  
+  home_title : "Chào mừng bạn đến với nông sản Vạn An"
+  
+# =================CONTACT PAGE====================
+  company_name: "CÔNG TY TNHH THƯƠNG MẠI MỘT THÀNH VIÊN ABC"
+  company_address: "Địa chỉ"
+  company_phone: "Điện thoại"
+  company_fax: "Fax"
+  company_email: "Email"
+  contact_name: "Tên"
+  contact_address: "Địa chỉ"
+  contact_phone: "Điện thoại"
+  contact_email: "Email"
+  contact_title: "Tiêu đề"
+  contact_info: "Thông tin"
+  contact_save: "Gửi thông tin liên hệ" 
+  contact_list: "Danh sách liên hệ"
+  contact_new: "Chưa xem"
+  contact_old: "Đã xem"
+  contact_status: "Tình trạng"
+  contact_show: "Xem"
+  contact_delete: "Xóa"
+
+
+  
+# ================= PRODUCT PAGE ====================
+  product_add: "Thêm sản phẩm"
+  product_edit:  "Cập nhật thông tin sản phẩm"
+  product_delete: "Xóa"
+  product_name: "Tên sản phẩm"
+  product_type: "Loại sản phẩm"
+  product_summary: "Mô tả tóm tắt"
+  product_desc: "Mô tả"
+  product_list: "Danh sách sản phẩm"
+  product_image: "Hình sản phẩm"
+  product_orther: "Sản phẩm khác"
+  product_price: "Giá sản phẩm"
+
+# ================= INTRODUCTION ====================
+  intro_intro: "Giới thiệu"
+  intro_name: "Tên"
+  intro_summary: "Tóm tắt"
+  intro_content: "Nội dung"
+  intro_img: "Hình ảnh"
+  intro_title: "Tiêu đề"
+  intro_input_info: "Thông tin liên hệ"
+  
+
